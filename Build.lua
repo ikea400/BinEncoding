@@ -11,3 +11,4 @@ workspace "BinEncoding"
 OutputDir = "%{cfg.system}-%{cfg.architecture}/%{cfg.buildcfg}"
 
 include "BinEncoding/Build-BinEncoding.lua"
+include "Example/Build-Example.lua"

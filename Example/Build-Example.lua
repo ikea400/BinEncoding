@@ -1,17 +1,19 @@
-project "BinEncoding"
-   kind "StaticLib"
+project "Example"
+   kind "ConsoleApp"
    language "C++"
    cppdialect "C++20"
    targetdir "Binaries/%{cfg.buildcfg}"
    staticruntime "off"
 
-   files { "Source/**.h", "Source/**.cpp", "../Vendor/fast-hex/src/**.cc"}
+   files { "Source/**.h", "Source/**.cpp", "../Vendor/fast-hex/src/**.cc" }
 
    includedirs
    {
       "Source",
 
-      -- Include fast-hex
+	  -- Include Core
+	  "../BinEncoding/Source",
+
       "../Vendor/fast-hex/src"
    }
 

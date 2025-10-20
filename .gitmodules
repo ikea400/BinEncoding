@@ -1,0 +1,3 @@
+[submodule "Vendor/base64"]
+	path = Vendor/base64
+	url = https://github.com/tobiaslocker/base64.git

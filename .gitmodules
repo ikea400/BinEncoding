@@ -1,0 +1,3 @@
+[submodule "Vendor/fast-hex"]
+	path = Vendor/fast-hex
+	url = https://github.com/zbjornson/fast-hex.git

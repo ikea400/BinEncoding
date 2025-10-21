@@ -18,6 +18,16 @@ int main()
 
 	std::cout << recoded << std::endl;
 
+	std::string base64 = ikea400::Bin::Base64::Encode(data);
+	std::cout << base64 << std::endl;
+
+	std::string formatB64 = ikea400::Bin::Base64::Format(data);
+	std::cout << formatB64 << std::endl;
+
+	std::vector<uint8_t> decodedB64 = ikea400::Bin::Base64::Decode<true>(base64);
+	std::string recodedB64 = ikea400::Bin::Base64::Encode(decodedB64);
+	std::cout << recodedB64 << std::endl;
+
 
 	return 0;
 }

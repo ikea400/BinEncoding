@@ -14,7 +14,11 @@ project "Example"
 	  -- Include Core
 	  "../BinEncoding/Source",
 
-      "../Vendor/fast-hex/src"
+      -- Include base64
+      "../Vendor/fast-hex/src",
+
+      -- Include base64
+      "../Vendor/base64/include"
    }
 
    targetdir ("../Binaries/" .. OutputDir .. "/%{prj.name}")

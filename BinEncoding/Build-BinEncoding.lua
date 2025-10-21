@@ -12,7 +12,10 @@ project "BinEncoding"
       "Source",
 
       -- Include fast-hex
-      "../Vendor/fast-hex/src"
+      "../Vendor/fast-hex/src",
+
+      -- Include base64
+      "../Vendor/base64/include"
    }
 
    targetdir ("../Binaries/" .. OutputDir .. "/%{prj.name}")
